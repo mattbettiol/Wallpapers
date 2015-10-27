@@ -1,0 +1,7 @@
+tell application "Terminal"
+	set currentTab to do script ("rm -rf /Users/yourusernamehere/wallpaper/path")
+	delay 1
+	set currentTab to do script ("./path/to/downloadWallpapers.sh")
+	delay 120
+	set currentTab to do script ("kill -9 $(ps -p $PPID -o ppid=)")
+end tell
